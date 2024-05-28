@@ -1,0 +1,194 @@
+:root {
+  --clr-soft-blue: hsl(215, 51%, 70%);
+  --clr-cyan: rgb(0, 255, 247);
+  --clr-cyan-overlay: rgba(0, 255, 247, 0.5);
+  --clr-white: hsl(0, 0%, 100%);
+  --bg-main: hsl(217, 54%, 11%);
+  --bg-card: hsl(216, 50%, 16%);
+  --bg-divider: hsl(215, 32%, 27%);
+
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-semibold: 600;
+
+  --ff-base: "Outfit", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 1.2;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 200ms ease;
+  color: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: var(--fw-light);
+  background-color: var(--bg-main);
+  color: var(--clr-soft-blue);
+  font-family: var(--ff-base);
+  display: flex;
+  justify-content: center;
+  padding: 0 2.4rem;
+}
+
+.horizontal-divider {
+  display: block;
+  height: 0.1rem;
+  width: 100%;
+  background-color: var(--bg-divider);
+  margin: 1.6rem 0;
+}
+
+.card-wrapper {
+  margin-top: 6.2rem;
+  max-width: 35rem;
+  padding: 2.4rem;
+  border-radius: 1.6rem;
+  background-color: var(--bg-card);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 12px 36px 20px;
+}
+
+.card-image {
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-image::after {
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  position: absolute;
+  background-color: var(--clr-cyan-overlay);
+  background-image: url("./images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 250ms ease;
+}
+
+.card-content-wrapper {
+  margin-top: 2.5rem;
+}
+
+.card-title {
+  color: var(--clr-white);
+  font-size: 2.2rem;
+  font-weight: var(--fw-semibold);
+}
+
+.card-description {
+  line-height: 1.6;
+  margin: 1.3rem 0 1.6rem 0;
+}
+
+.card-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.3rem 0 0.1rem;
+}
+
+.volume-price {
+  font-weight: var(--fw-semibold);
+  color: var(--clr-cyan);
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03rem;
+  margin-left: -0.1rem;
+}
+
+.day-left {
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04rem;
+}
+
+.day-left img,
+.volume-price img {
+  margin-right: 0.6rem;
+}
+
+.card-credit img {
+  width: 33px;
+  height: 33px;
+  border-radius: 9999px;
+  margin-right: 1.6rem;
+  border: 0.1125rem solid var(--clr-white);
+}
+
+.card-credit p {
+  letter-spacing: -0.026rem;
+}
+
+.card-credit p a {
+  color: var(--clr-white);
+}
+
+.card-credit {
+  display: flex;
+  align-items: center;
+}
+
+@media (hover: hover) {
+  .card-title:hover,
+  .card-credit p a:hover {
+    color: var(--clr-cyan) !important;
+  }
+  .card-image:hover::after {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    font-size: 1.8rem;
+  }
+  .card-wrapper {
+    margin-top: 15.2rem;
+    padding-bottom: 3.2rem;
+  }
+  .volume-price {
+    letter-spacing: 0.03rem;
+    font-size: 1.6rem;
+  }
+
+  .day-left {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    letter-spacing: normal;
+  }
+
+  .card-description {
+    margin: 1.7rem 0 2.4rem 0;
+    line-height: 1.444444;
+  }
+
+  .card-credit p {
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+  }
+
+  .horizontal-divider {
+    margin-top: 2.4rem;
+  }
+}
