@@ -12,11 +12,36 @@ Users should be able to:
 
 ### Solution
 
-- [Solution Link]()
-- [Site Link]()
-
-![](./design/desktop-preview.jpg)
-
-### Built with
-
 - HTML & CSS
+
+[`Solution Link`](https://www.frontendmentor.io/solutions/only-html-and-css-ktVU04q3xd) [`Live Site Link`](https://haquanq.github.io/fm-nft-preview-card-component/)
+
+![](./.docs/design/desktop-design.jpg)
+
+## Working in `fm-nft-preview-card-component` repository
+
+### Packages being used
+
+- [`browser-sync`](https://github.com/BrowserSync/browser-sync)
+
+### Clone this project to your machine
+
+Make sure you have Git installed in your system, open new terminal, run the following command:
+
+```
+git clone https://github.com/haquanq/fm-nft-preview-card-component.git
+```
+
+Then, run `npm install` to install all dependencies.
+
+```
+npm install
+```
+
+### Development workflow
+
+In terminal, run `npm run dev` to start development server:
+
+```
+npm run dev
+```

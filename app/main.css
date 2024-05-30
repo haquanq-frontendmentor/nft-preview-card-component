@@ -80,7 +80,7 @@ body {
   content: "";
   position: absolute;
   background-color: var(--clr-cyan-overlay);
-  background-image: url("./images/icon-view.svg");
+  background-image: url("./assets/icon-view.svg");
   background-repeat: no-repeat;
   background-position: center;
   transition: 250ms ease;
