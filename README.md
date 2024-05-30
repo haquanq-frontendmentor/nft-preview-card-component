@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Solution
 
-- HTML & CSS
+- Built with `HTML` `CSS`
 
 [`Solution Link`](https://www.frontendmentor.io/solutions/only-html-and-css-ktVU04q3xd) [`Live Site Link`](https://haquanq.github.io/fm-nft-preview-card-component/)
 
