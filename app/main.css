@@ -53,6 +53,11 @@ a {
     padding-top: clamp(3.875rem, 8vw + 2.5rem, 9.5rem);
     padding-bottom: clamp(3.875rem, 8vw + 2.5rem, 9.5rem);
 }
+.main__container h1 {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
 .card {
     margin: 0 auto;
     width: min(100vw - 3rem, 21.875rem);
