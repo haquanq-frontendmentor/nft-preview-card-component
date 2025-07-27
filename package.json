@@ -1,5 +1,5 @@
 {
-  "name": "fm-nft-preview-card-component",
+  "name": "nft-preview-card-component",
   "description": "Solution for frontendmentor.io challenge: nft-preview-card-component",
   "devDependencies": {
     "browser-sync": "^3.0.2"
