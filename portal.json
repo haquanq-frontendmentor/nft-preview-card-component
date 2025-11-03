@@ -1,6 +1,6 @@
 {
   "name": "NFT Preview Card Component",
-  "featured": false,
+  "featured": true,
   "colors": {
     "brand": "#11BAC0"
   },
