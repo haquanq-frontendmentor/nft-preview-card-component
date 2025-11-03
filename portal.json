@@ -1,0 +1,15 @@
+{
+  "name": "NFT Preview Card Component",
+  "featured": false,
+  "colors": {
+    "brand": "#11BAC0"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/nft-preview-card-component/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "newbie",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/mobile-first-pixel-perfect-w-html-and-bem-css-D8Igf0pz1o"
+  }
+}
